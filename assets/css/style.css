@@ -1,27 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300&display=swap');
+
 /* * to identefy all elements*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
+    font-family: lato, sans-serif;
 }
 
 /*header*/
-header{
+header {
     background-color: aqua;
 }
+
 /*main*/
-main{
+main {
     background-color: chartreuse;
     flex: 1 0 auto;
 }
+
 /*footer*/
-footer{
+footer {
     background-color: chocolate;
 }
