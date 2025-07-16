@@ -1,0 +1,19 @@
+/* * to identefy all elements*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header{
+    background-color: aqua;
+}
+/*main*/
+main{
+    background-color: chartreuse;
+}
+/*footer*/
+footer{
+    background-color: chocolate;
+}
