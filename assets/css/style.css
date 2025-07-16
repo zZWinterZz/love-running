@@ -1,73 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300&display=swap');
-
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 /* * to identefy all elements*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #3a3a3a;
-    font-family: 'lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3a3a3a;
+  font-family: "lato", sans-serif;
 }
 
 /*header*/
 header {
-    background-color: #ffffff;
-    padding: 0 1rem;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-header a{
-    text-decoration: none;
-    color: inherit;
+header a {
+  text-decoration: none;
+  color: inherit;
 }
 
-h1{
-    font-family: 'oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+h1 {
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
-#menu{
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style: none;
-}
-
-#menu > li{
-    margin-bottom: 1em;
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style: none;
 }
 
-.active{
-    border-bottom: 1px solid #3a3a3a;    
+#menu > li {
+  margin-bottom: 1em;
+}
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /*nav bar styling*/
-nav{
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-
+nav {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
 }
+
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle{
+    font-size: 2rem;
+}
+
 
 /*main*/
 main {
-    background-color: chartreuse;
-    flex: 1 0 auto;
+  background-color: chartreuse;
+  flex: 1 0 auto;
+  margin-top: 47px;
+
 }
 
 /*footer*/
 footer {
-    background-color: chocolate;
+  background-color: chocolate;
 }
