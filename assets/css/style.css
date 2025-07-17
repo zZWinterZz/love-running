@@ -158,8 +158,30 @@ nav{
 #cover-text{
   width: 300px;
   right: 50px;
-  
+
 }         
+}
+
+#reasons{
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  h2{
+    font-size: 280%;
+    margin: 20px;
+  }
+  hr{
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+  }
+  p{
+    padding: 0 20px;
+  }
+  div{
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 992px) 
